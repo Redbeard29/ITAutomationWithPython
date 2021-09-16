@@ -15,7 +15,7 @@ localStorage.setItem('localCourseProgress~85718863~8D3R5HiaEeioIg7r4jw_PA', JSON
 //Get previously stored items from localStorage so that we can add new items on the coming pages without overwriting previous items
 let stored = JSON.parse(localStorage.getItem('localCourseProgress~85718863~8D3R5HiaEeioIg7r4jw_PA'));
 
-//From here, we can repeat steps 1, 2 and 3 on the new page and then add them to the stored object, then add that stored object back to localStorage
+//From here, we can repeat steps 1, 2, 3 and 5 on the new page and then add them to the stored object, then add that stored object back to localStorage
 for(const property in idObject){
     stored[`${property}`] = `${idObject[property]}`
 }
